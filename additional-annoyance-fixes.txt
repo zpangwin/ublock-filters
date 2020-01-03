@@ -1,0 +1,20 @@
+! =================================================================
+! For: Anti-adblock on Washington Post
+! From: https://www.reddit.com/r/uBlockOrigin/comments/8kuf7n/
+! =================================================================
+||washingtonpost.com/wp-stat/pwapi/prod/*
+
+! =================================================================
+! For: Annoying CNET in-line videos
+! From: https://www.reddit.com/r/uBlockOrigin/comments/b69vmo/
+! =================================================================
+! Block the playlist
+www.cnet.com/videos/manifest/*.m3u8?device=ott*
+
+! Block the script that loads the playlists
+*.cbsistatic.com/fly/js/pages/desktop/article_video_test*.js
+
+! Element hiding: hide the now-useless placeholder
+www.cnet.com##.entered.dock.inviewElement
+
+
