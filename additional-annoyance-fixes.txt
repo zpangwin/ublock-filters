@@ -17,4 +17,12 @@ www.cnet.com/videos/manifest/*.m3u8?device=ott*
 ! Element hiding: hide the now-useless placeholder
 www.cnet.com##.entered.dock.inviewElement
 
+! =================================================================
+# trying to block "youtube tv" popup
+# https://www.ghacks.net/2020/09/27/how-to-deal-with-googles-and-youtubes-aggressive-popups-before-you-continue-sign-in/
+# https://www.reddit.com/r/uBlockOrigin/comments/gub5mu/block_youtube_join_membership_try_youtube_tv_popup/
+! =================================================================
+www.youtube.com###dialog
+www.youtube.com##.opened
+youtube.com##ytd-popup-container paper-dialog:has-text(/Changes to YouTube’s Terms of Service|Check out your new Library|Get access to exclusive perks|How is your experience|How is YouTube today|Our Terms of Service have been updated|Rate your ads|Try it free|Try the YouTube Kids app|What is your biggest complaint|Which problems are you experiencing|You're signed out of YouTube|YouTube TV/)
 
